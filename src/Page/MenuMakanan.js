@@ -15,7 +15,7 @@ class MenuMakanan extends Component{
   rubahPesanan () {
     this.setState((state, props) => {
       return{
-        pesan: state.pesan++,
+        pesan: state.pesan + 1,
       };
     });
   }
@@ -68,8 +68,11 @@ class MenuMakanan extends Component{
           </table>
 
           <br/>
-          <input type="text" value={this.state.pesan}/>
-
+          <input
+            type="text"
+            onChange={this.pesanan}
+            />
+          <h3>Pesanan Anda : {this.state.pesan}</h3>
       </div>
     );
   };
