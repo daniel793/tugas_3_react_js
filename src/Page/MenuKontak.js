@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
-class MenuTentangKami extends Component {
+class MenuKontak extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      tentang : this.props.tentang,
+      kontak : this.props.kontak,
+      hp : this.props.hp,
     }
   }
 
@@ -12,8 +13,8 @@ class MenuTentangKami extends Component {
     return(
       <div>
         <center>
-          <p>Tentang Kami</p>
-          {this.state.tentang}
+          <p>{this.state.kontak}</p>
+          <p>Kontak Kami : {this.state.hp}</p>
         </center>
       </div>
     );
@@ -21,4 +22,4 @@ class MenuTentangKami extends Component {
 
 }
 
-export default MenuTentangKami;
+export default MenuKontak;
