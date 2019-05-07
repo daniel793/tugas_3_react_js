@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
 class ListMakanan extends Component{
-
-  consturctor(props) {
+    constructor(props) {
     super(props);
-    this.state={
-      dataList : this.props.ListMakanan,
+
+    this.state = {
+      dataList : this.props.src,
     };
   }
 
@@ -15,9 +15,10 @@ class ListMakanan extends Component{
         <img
           src={this.state.dataList}
           alt="Produk Makanan"
-          width="150"
-          />
-      <div>
+          width="150" />
+      </div>
     );
   }
 }
+
+export default ListMakanan;
