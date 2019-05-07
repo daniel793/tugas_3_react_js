@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 class ListMakanan extends Component{
 
-  consturctor(props) {
+  constructor(props) {
     super(props);
     this.state={
-      dataList : this.props.ListMakanan,
+      dataList : this.props.src,
     };
   }
 
@@ -17,7 +17,9 @@ class ListMakanan extends Component{
           alt="Produk Makanan"
           width="150"
           />
-      <div>
+      </div>
     );
   }
 }
+
+export default ListMakanan;

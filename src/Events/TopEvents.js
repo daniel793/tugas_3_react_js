@@ -1,6 +1,6 @@
 import React from 'react';
 
-const topEvents = ()=>{
+const TopEvents = ()=>{
 
   const handleFooter = (value, e)=>{
       e.preventDefault();
@@ -15,4 +15,4 @@ const topEvents = ()=>{
 
 };
 
-export default topEvents;
+export default TopEvents;
